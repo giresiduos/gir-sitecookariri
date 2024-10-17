@@ -7,76 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="script.js"></script>
-    <style>
-        /* Estilos para as seções informativas */
-        .info-section {
-            padding: 4rem 2rem;
-            background-color: #f9f9f9;
-            text-align: center;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .info-section:hover {
-            transform: scale(1.02);
-            background-color: #e9ecef;
-        }
-
-        .info-section h2 {
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-            color: var(--primary-color);
-        }
-
-        .info-section p {
-            max-width: 800px;
-            margin: 0 auto 1.5rem auto;
-            font-size: 1.2rem;
-            line-height: 1.5;
-            color: #555;
-        }
-
-        .info-section i {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Estilo das seções de serviços */
-        .services-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 2rem;
-        }
-
-        .service-item {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 2rem;
-            margin: 1rem;
-            transition: transform 0.3s ease;
-            width: calc(30% - 2rem);
-        }
-
-        .service-item:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Benefícios para a comunidade */
-        .community-benefits {
-            padding: 4rem 2rem;
-            background-color: #e0f7fa;
-            text-align: center;
-        }
-
-        /* Formas de colaboração */
-        .collaboration-section {
-            padding: 4rem 2rem;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-    </style>
+    
+   
 </head>
 <body>
     <section id="home" class="hero">
@@ -86,10 +18,13 @@
             </div>
             <ul>
                 <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
+                <li><a href="#who">Quem Somos</a></li>
+                <li><a href="#objectives">Objetivos</a></li>
+                <li><a href="#how">Como Trabalhamos</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#team">Equipe</a></li>
                 <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#statistics">Estatísticas</a></li>
                 <li><a href="#community">Comunidade</a></li>
                 <li><a href="#collaboration">Colabore</a></li>
                 <li><a href="#contact">Contato</a></li>
@@ -99,107 +34,91 @@
         <div class="hero-content">
             <h1>Juntos por um Futuro Sustentável</h1>
             <p>Oferecemos soluções ecológicas para a gestão de resíduos, garantindo um amanhã melhor.</p>
-            <a href="#about" class="cta-btn">Saiba Mais</a>
+            <a href="#who" class="cta-btn">Saiba Mais</a>
         </div>
         <img src="img/eco-home.jpg" alt="Gestão Ecológica" class="hero-image">
     </section>
 
-    <section id="about" class="info-section">
-        <h2><i class="fas fa-info-circle"></i> Quem Somos</h2>
-        <p>A CooKariri é uma cooperativa que busca transformar as condições de trabalho e aumentar a renda dos catadores de materiais recicláveis. Estamos comprometidos com a dignidade dos trabalhadores e a sustentabilidade.</p>
+    <section id="who" class="who-we-are section">
+        <h2>Quem Somos</h2>
+        <p>Somos uma cooperativa dedicada à gestão de resíduos, comprometida em promover a sustentabilidade e a educação ambiental.</p>
     </section>
 
-    <section id="objectives" class="info-section">
-        <h2><i class="fas fa-bullseye"></i> Objetivos</h2>
-        <p>Nossa meta é otimizar processos e aumentar a produtividade, proporcionando uma renda justa para os catadores e promovendo práticas sustentáveis.</p>
-        <p><strong>Estatísticas:</strong> A cada 1 tonelada de material reciclável, evitamos a emissão de até 1.2 toneladas de CO<sub>2</sub> na atmosfera.</p>
+    <section id="objectives" class="objectives section">
+        <h2>Objetivos</h2>
+        <p>Nossos objetivos incluem a redução de resíduos, a promoção da reciclagem e a conscientização da comunidade sobre a importância da sustentabilidade.</p>
     </section>
 
-    <section id="how-we-work" class="info-section">
-        <h2><i class="fas fa-cogs"></i> Como Trabalhamos</h2>
-        <p>Atuamos em coleta seletiva, compra e venda de recicláveis e logística reversa, sempre com o foco na destinação correta de resíduos e no respeito ao meio ambiente.</p>
+    <section id="how" class="how-we-work section">
+        <h2>Como Trabalhamos</h2>
+        <p>Implementamos práticas de coleta seletiva, reciclagem e parcerias com empresas locais para garantir um ciclo sustentável de gestão de resíduos.</p>
     </section>
 
-    <section id="services" class="section">
-        <h2><span>♻️</span> Nossos Serviços</h2>
-        <div class="services-container">
-            <div class="service-item">
+    <section id="statistics" class="info-section">
+        <h2><i class="fas fa-chart-bar"></i> Estatísticas sobre Reciclagem</h2>
+        <div class="cards-container">
+            <div class="card">
                 <i class="fas fa-recycle"></i>
-                <h3>Coleta Seletiva</h3>
-                <p>Organizamos a coleta de resíduos recicláveis.</p>
+                <h3>Reciclagem de Plástico</h3>
+                <p>Reciclar 1 tonelada de plástico economiza 7,4 metros cúbicos de espaço em aterros.</p>
             </div>
-            <div class="service-item">
-                <i class="fas fa-money-bill-wave"></i>
-                <h3>Compra e Venda</h3>
-                <p>Garantimos renda justa para catadores.</p>
+            <div class="card">
+                <i class="fas fa-paper-plane"></i>
+                <h3>Papel e Papelão</h3>
+                <p>A reciclagem de papel pode reduzir a poluição do ar em 74% e a água em 35%.</p>
             </div>
-            <div class="service-item">
-                <i class="fas fa-retweet"></i>
-                <h3>Logística Reversa</h3>
-                <p>Retorno de materiais ao ciclo produtivo.</p>
+            <div class="card">
+                <i class="fas fa-glass-whiskey"></i>
+                <h3>Vidro</h3>
+                <p>Reciclar vidro consome 40% menos energia do que produzir vidro novo.</p>
             </div>
         </div>
     </section>
 
     <section id="community" class="community-benefits">
         <h2><i class="fas fa-users"></i> Benefícios para a Comunidade</h2>
-        <p>Ao apoiar a CooKariri, você ajuda a:</p>
-        <ul style="list-style: none; padding: 0;">
-            <li>🔹 Criar empregos locais.</li>
-            <li>🔹 Reduzir a quantidade de resíduos enviados a aterros.</li>
-            <li>🔹 Promover a educação ambiental nas comunidades.</li>
-            <li>🔹 Fortalecer a economia circular.</li>
-        </ul>
-    </section>
-
-    <section id="collaboration" class="collaboration-section">
-        <h2><i class="fas fa-handshake"></i> Como Colaborar</h2>
-        <p>Você pode fazer a diferença! Conheça algumas formas de colaborar:</p>
-        <ul style="list-style: none; padding: 0;">
-            <li>🔸 Realizar doações de materiais recicláveis.</li>
-            <li>🔸 Participar de eventos e campanhas de conscientização.</li>
-            <li>🔸 Fazer parcerias com empresas locais.</li>
-        </ul>
-        <p>Entre em contato para saber mais!</p>
-    </section>
-
-    <section id="team" class="section">
-        <h2><span>👥</span> Conheça Nossa Equipe</h2>
-        <div class="team-container">
-            <div class="team-member">
-                <img src="img/team1.jpg" alt="João Silva">
-                <h3>João Silva</h3>
-                <p>CEO & Fundador</p>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Criando Empregos</h3>
+                <p>Geramos oportunidades de trabalho para catadores e ajudamos a reduzir o desemprego.</p>
             </div>
-            <div class="team-member">
-                <img src="img/team2.jpg" alt="Maria Santos">
-                <h3>Maria Santos</h3>
-                <p>Consultora Ambiental</p>
+            <div class="card">
+                <i class="fas fa-leaf"></i>
+                <h3>Educação Ambiental</h3>
+                <p>Promovemos workshops e atividades para conscientizar a população sobre a reciclagem.</p>
             </div>
-            <div class="team-member">
-                <img src="img/team3.jpg" alt="Lucas Costa">
-                <h3>Lucas Costa</h3>
-                <p>Gerente de Operações</p>
+            <div class="card">
+                <i class="fas fa-recycle"></i>
+                <h3>Redução de Resíduos</h3>
+                <p>Com ações de coleta seletiva, diminuímos a quantidade de resíduos enviados aos aterros.</p>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="section">
-        <h2><span>🗣️</span> Depoimentos</h2>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <p>"A EcoResíduos nos ajudou a reduzir nosso impacto ambiental com soluções inovadoras."</p>
-                <h3>- Empresa X</h3>
+    <section id="collaboration" class="collaboration-section">
+        <h2><i class="fas fa-handshake"></i> Como Colaborar</h2>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fas fa-donate"></i>
+                <h3>Faça Doações</h3>
+                <p>Doe materiais recicláveis e ajude a cooperativa a crescer.</p>
             </div>
-            <div class="testimonial">
-                <p>"Uma parceria valiosa que trouxe grandes resultados para a sustentabilidade da nossa cidade."</p>
-                <h3>- Prefeitura Y</h3>
+            <div class="card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Participe de Eventos</h3>
+                <p>Engaje-se em nossas campanhas de conscientização e eventos comunitários.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-building"></i>
+                <h3>Parcerias Locais</h3>
+                <p>Colabore com empresas locais para promover a sustentabilidade na sua região.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <h2><span>✉️</span> Fale Conosco</h2>
+        <h2><i class="fas fa-envelope"></i> Fale Conosco</h2>
         <p>Estamos prontos para ajudar. Entre em contato para saber mais sobre nossos serviços.</p>
         <a href="mailto:contato@ecoresiduos.com" class="cta-btn">Entrar em Contato</a>
     </section>
