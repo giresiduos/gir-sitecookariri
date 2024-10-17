@@ -225,3 +225,8 @@ footer {
 #contact .cta-btn:hover {
     background-color: var(--secondary-color);
 }
+
+.logo{
+    width: 20%;
+    margin-left: 30%;
+}
