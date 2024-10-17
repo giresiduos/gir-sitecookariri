@@ -225,8 +225,8 @@ footer {
 #contact .cta-btn:hover {
     background-color: var(--secondary-color);
 }
-   /* Estilos gerais */
-   :root {
+  /* Estilos gerais */
+  :root {
     --bg-color: #fff;
     --text-color: #333;
     --primary-color: #28a745;
@@ -346,4 +346,9 @@ h2 {
 /* Estilos das novas seções */
 .who-we-are, .objectives, .how-we-work {
     margin: 2rem 0;
+}
+
+.logo{
+    width: 20%;
+    margin-left: 30%;
 }
