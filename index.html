@@ -7,125 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="script.js"></script>
-    <style>
-        /* Estilos gerais */
-        :root {
-            --bg-color: #fff;
-            --text-color: #333;
-            --primary-color: #28a745;
-            --secondary-color: #ff9800;
-        }
 
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .dark-theme {
-            --bg-color: #333;
-            --text-color: #fff;
-        }
-
-        /* Navegação e Botões */
-        header, footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: var(--primary-color);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        button, .cta-btn {
-            background-color: white;
-            color: var(--primary-color);
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-btn {
-            background-color: var(--secondary-color);
-        }
-
-        .cta-btn:hover {
-            background-color: var(--primary-color);
-        }
-
-        /* Seções gerais */
-        .section {
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-            margin: 2rem 0;
-            font-size: 2rem;
-            color: var(--primary-color);
-        }
-
-        /* Estilos para os cards */
-        .cards-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 2rem;
-            margin: 1rem;
-            width: calc(30% - 2rem);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card i {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .card h3 {
-            font-size: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .card p {
-            color: #555;
-        }
-    </style>
 </head>
 <body>
     <section id="home" class="hero">
@@ -138,12 +20,6 @@
                 <li><a href="#who">Quem Somos</a></li>
                 <li><a href="#objectives">Objetivos</a></li>
                 <li><a href="#how">Como Trabalhamos</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#team">Equipe</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#statistics">Estatísticas</a></li>
-                <li><a href="#community">Comunidade</a></li>
-                <li><a href="#collaboration">Colabore</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <button id="theme-toggle">Alternar Tema</button>
@@ -155,6 +31,10 @@
         </div>
         <img src="public/gruporedescookariri.jpeg" alt="Gestão Ecológica" class="hero-image">
     </section>
+
+<div class="contato">
+    <img src="./public/2.png" id="whatzapp" alt="">
+</div>
 
     <section id="quem-somos" class="section">
         <div class="container">
@@ -192,48 +72,32 @@
         </div>
     </section>
 
-    <section id="how" class="how-we-work section">
-        <h2>Como Trabalhamos</h2>
-        <p>Atuamos em três frentes principais: Coleta de Resíduos, Compra e Venda de Recicláveis e Logística Reversa. Nossas práticas são voltadas para a eficiência e a sustentabilidade, garantindo um impacto positivo nas comunidades que atendemos.</p>
-        <div class="cards-container v-pattern">
-            <div class="card">
-                <i class="fas fa-trash-alt"></i>
-                <h3>Coleta de Resíduos</h3>
-                <p>Realizamos coleta seletiva de forma organizada, garantindo separação na origem e contribuindo para a limpeza urbana.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-exchange-alt"></i>
-                <h3>Compra e Venda</h3>
-                <p>Compramos recicláveis dos catadores, garantindo renda justa para eles e fortalecendo a economia local.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-truck"></i>
-                <h3>Logística Reversa</h3>
-                <p>Oferecemos soluções para empresas atenderem suas responsabilidades ambientais, fechando o ciclo produtivo.</p>
-            </div>
-        </div>
-    </section>
+
 
 <section id="como-trabalhamos">
     <h1 class="title">Como Trabalhamos</h1>
     <div class="container">
         <div class="card">
             <img src="public/logo-light.jpeg" alt="">
-            <b>TEXTO TEXTO</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores impedit, id blanditiis dolorem ab placeat minus temporibus dolorum. Dignissimos ut omnis, veritatis modi suscipit eum earum corrupti vel eligendi!</p>
+            <b>Coleta de Resíduos</b>
+            <p>Realizamos coleta seletiva de forma organizada, garantindo separação na origem e contribuindo para a limpeza urbana.</p>
         </div>
         <div class="card">
             <img src="public/logo-light.jpeg" alt="">
-            <b>TEXTO TEXTO</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores impedit, id blanditiis dolorem ab placeat minus temporibus dolorum. Dignissimos ut omnis, veritatis modi suscipit eum earum corrupti vel eligendi!</p>
+            <b>Compra e Venda</b>
+            <p>Compramos recicláveis dos catadores, garantindo renda justa para eles e fortalecendo a economia local.</p>
         </div>
         <div class="card">
             <img src="public/logo-light.jpeg" alt="">
-            <b>TEXTO TEXTO</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores impedit, id blanditiis dolorem ab placeat minus temporibus dolorum. Dignissimos ut omnis, veritatis modi suscipit eum earum corrupti vel eligendi!</p>
+            <b>Logística Reversa</b>
+            <p>Oferecemos soluções para empresas atenderem suas responsabilidades ambientais, fechando o ciclo produtivo.</p>
         </div>
     </div>
 </section>
+
+
+
+
 
     <section id="statistics" class="info-section">
         <h2><i class="fas fa-chart-bar"></i> Estatísticas sobre Reciclagem</h2>
@@ -305,7 +169,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 EcoResíduos. Todos os direitos reservados.</p>
+        <img id="logo" src="./public/logo-sem-fundo.png" alt="">
+        <p>&copy; 2024 Redecookariri. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
