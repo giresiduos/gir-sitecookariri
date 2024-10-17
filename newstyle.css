@@ -309,3 +309,27 @@
         margin-bottom: 1.5rem;
     }
 }
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #041407; /* Cor cinza */
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Pequeno espaço entre o logo e o texto */
+}
+
+.footer p {
+    color: white;
+    font-size: 14px;
+}
+
+.logo-footer {
+    width: 150px;
+}
