@@ -7,8 +7,125 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="script.js"></script>
-    
-   
+    <style>
+        /* Estilos gerais */
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --primary-color: #28a745;
+            --secondary-color: #ff9800;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark-theme {
+            --bg-color: #333;
+            --text-color: #fff;
+        }
+
+        /* Navegação e Botões */
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button, .cta-btn {
+            background-color: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn {
+            background-color: var(--secondary-color);
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Seções gerais */
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        /* Estilos para os cards */
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 1rem;
+            width: calc(30% - 2rem);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .card p {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <section id="home" class="hero">
@@ -41,17 +158,68 @@
 
     <section id="who" class="who-we-are section">
         <h2>Quem Somos</h2>
-        <p>Somos uma cooperativa dedicada à gestão de resíduos, comprometida em promover a sustentabilidade e a educação ambiental.</p>
+        <p>A Cooperativa de Trabalho e Serviços Socioambientais de Catadores e Catadoras da Região do Cariri – CooKariri é uma sociedade cooperativa que visa transformar as condições de trabalho e aumentar a renda dos catadores de materiais recicláveis. Nossa missão é criar um ambiente sustentável onde os resíduos são valorizados e a dignidade dos trabalhadores é priorizada.</p>
+        <div class="cards-container v-pattern">
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Cooperativa</h3>
+                <p>Fundada com base nos princípios do cooperativismo e autogestão, promovendo inclusão social.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Localização</h3>
+                <p>Sede em Juazeiro do Norte, Ceará, com planos de expansão nacional para alcançar mais comunidades.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-leaf"></i>
+                <h3>Compromisso Ambiental</h3>
+                <p>Destinação correta de resíduos para empresas que buscam soluções sustentáveis, preservando o meio ambiente.</p>
+            </div>
+        </div>
     </section>
 
     <section id="objectives" class="objectives section">
         <h2>Objetivos</h2>
-        <p>Nossos objetivos incluem a redução de resíduos, a promoção da reciclagem e a conscientização da comunidade sobre a importância da sustentabilidade.</p>
+        <p>Nossos objetivos incluem a redução de resíduos, a promoção da reciclagem e a conscientização da comunidade sobre a importância da sustentabilidade. Trabalhamos para criar um futuro onde a economia circular é uma realidade e todos se beneficiam.</p>
+        <div class="cards-container v-pattern">
+            <div class="card">
+                <i class="fas fa-recycle"></i>
+                <h3>Redução de Resíduos</h3>
+                <p>Implementar práticas para diminuir a geração de resíduos nas comunidades e incentivar a reutilização.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Promoção da Reciclagem</h3>
+                <p>Conscientizar sobre a importância da reciclagem e como praticá-la, com iniciativas educacionais.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-info-circle"></i>
+                <h3>Educação Ambiental</h3>
+                <p>Desenvolver programas educativos para a comunidade sobre sustentabilidade e a gestão de resíduos.</p>
+            </div>
+        </div>
     </section>
 
     <section id="how" class="how-we-work section">
         <h2>Como Trabalhamos</h2>
-        <p>Implementamos práticas de coleta seletiva, reciclagem e parcerias com empresas locais para garantir um ciclo sustentável de gestão de resíduos.</p>
+        <p>Atuamos em três frentes principais: Coleta de Resíduos, Compra e Venda de Recicláveis e Logística Reversa. Nossas práticas são voltadas para a eficiência e a sustentabilidade, garantindo um impacto positivo nas comunidades que atendemos.</p>
+        <div class="cards-container v-pattern">
+            <div class="card">
+                <i class="fas fa-trash-alt"></i>
+                <h3>Coleta de Resíduos</h3>
+                <p>Realizamos coleta seletiva de forma organizada, garantindo separação na origem e contribuindo para a limpeza urbana.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>Compra e Venda</h3>
+                <p>Compramos recicláveis dos catadores, garantindo renda justa para eles e fortalecendo a economia local.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-truck"></i>
+                <h3>Logística Reversa</h3>
+                <p>Oferecemos soluções para empresas atenderem suas responsabilidades ambientais, fechando o ciclo produtivo.</p>
+            </div>
+        </div>
     </section>
 
     <section id="statistics" class="info-section">
@@ -64,55 +232,55 @@
             </div>
             <div class="card">
                 <i class="fas fa-paper-plane"></i>
-                <h3>Papel e Papelão</h3>
-                <p>A reciclagem de papel pode reduzir a poluição do ar em 74% e a água em 35%.</p>
+                <h3>Reciclagem de Papel</h3>
+                <p>Uma tonelada de papel reciclado salva 17 árvores e 26.000 litros de água.</p>
             </div>
             <div class="card">
-                <i class="fas fa-glass-whiskey"></i>
-                <h3>Vidro</h3>
-                <p>Reciclar vidro consome 40% menos energia do que produzir vidro novo.</p>
+                <i class="fas fa-apple-alt"></i>
+                <h3>Reciclagem de Alimentos</h3>
+                <p>Reciclar restos de alimentos reduz a emissão de gases de efeito estufa.</p>
             </div>
         </div>
     </section>
 
-    <section id="community" class="community-benefits">
+    <section id="community" class="info-section">
         <h2><i class="fas fa-users"></i> Benefícios para a Comunidade</h2>
         <div class="cards-container">
             <div class="card">
-                <i class="fas fa-briefcase"></i>
-                <h3>Criando Empregos</h3>
-                <p>Geramos oportunidades de trabalho para catadores e ajudamos a reduzir o desemprego.</p>
+                <i class="fas fa-heart"></i>
+                <h3>Melhoria da Saúde</h3>
+                <p>A coleta e reciclagem reduzem a poluição, promovendo um ambiente mais saudável.</p>
             </div>
             <div class="card">
-                <i class="fas fa-leaf"></i>
-                <h3>Educação Ambiental</h3>
-                <p>Promovemos workshops e atividades para conscientizar a população sobre a reciclagem.</p>
+                <i class="fas fa-balance-scale"></i>
+                <h3>Justiça Social</h3>
+                <p>Garantia de renda justa para os catadores de materiais recicláveis.</p>
             </div>
             <div class="card">
-                <i class="fas fa-recycle"></i>
-                <h3>Redução de Resíduos</h3>
-                <p>Com ações de coleta seletiva, diminuímos a quantidade de resíduos enviados aos aterros.</p>
+                <i class="fas fa-coins"></i>
+                <h3>Desenvolvimento Local</h3>
+                <p>Fomento à economia local através do trabalho e parcerias sustentáveis.</p>
             </div>
         </div>
     </section>
 
-    <section id="collaboration" class="collaboration-section">
+    <section id="collaboration" class="info-section">
         <h2><i class="fas fa-handshake"></i> Como Colaborar</h2>
         <div class="cards-container">
             <div class="card">
                 <i class="fas fa-donate"></i>
-                <h3>Faça Doações</h3>
-                <p>Doe materiais recicláveis e ajude a cooperativa a crescer.</p>
+                <h3>Doações</h3>
+                <p>Contribua com doações financeiras ou de materiais recicláveis.</p>
             </div>
             <div class="card">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Participe de Eventos</h3>
-                <p>Engaje-se em nossas campanhas de conscientização e eventos comunitários.</p>
+                <i class="fas fa-users-cog"></i>
+                <h3>Voluntariado</h3>
+                <p>Participe como voluntário em nossas ações de educação e coleta.</p>
             </div>
             <div class="card">
-                <i class="fas fa-building"></i>
-                <h3>Parcerias Locais</h3>
-                <p>Colabore com empresas locais para promover a sustentabilidade na sua região.</p>
+                <i class="fas fa-share-alt"></i>
+                <h3>Divulgação</h3>
+                <p>Ajude a divulgar nosso trabalho e conscientizar a comunidade.</p>
             </div>
         </div>
     </section>
