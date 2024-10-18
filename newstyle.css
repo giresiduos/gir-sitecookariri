@@ -323,8 +323,11 @@
     #como-trabalhamos .card {
         width: 100%;
         margin-bottom: 1.5rem;
+        margin-left: 0px;
     }
 }
+
+/* SEÇÃO DE OBJETIVOS */
 #objetivos .section {
     display: flex;
     flex-wrap: wrap;
@@ -461,6 +464,17 @@ h2.light-mode {
 .card.light-mode h3, .card.light-mode p {
     color: #333;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards-container .card{
+        margin-left: 0px;
+    }
+}
+
+
+
+
 
 :root {
     /* Cores para o tema claro */
