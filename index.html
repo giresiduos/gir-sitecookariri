@@ -30,13 +30,13 @@
 <div class="hero-content">
     <h1>Juntos por um Futuro Sustentável</h1>
     <p>Oferecemos soluções ecológicas para a gestão de resíduos, garantindo um amanhã melhor.</p>
-    <a href="#contact" class="cta-btn">Entre em Contato</a>
+    <p class="contato-header"><a href="#contato" class="cta-btn">Entre em Contato</a></p>
 </div>
 </section>
 
 
 <div class="contato">
-<img src="./public/2.png" id="whatzapp" alt="">
+<img src="./public/2.png" id="whatzapp" alt="" onclick="contato()">
 </div>
 
 <section id="quem-somos" class="section">
@@ -135,7 +135,7 @@
     </div>
     <div class="content-container">
         <h2>Entre em Contato</h2>
-        <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5588993387593" target="_blank" class="whatsapp-button">
             Chamar no WhatsApp                 <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -173,7 +173,9 @@ themeToggle.addEventListener('click', () => {
         themeToggle.textContent = 'Tema Claro';
     }
 });
-
+function contato(){
+    location="https://api.whatsapp.com/send?1=pt_BR&phone=5588993387593"
+}
 </script> 
     
 </body>
