@@ -642,6 +642,7 @@ body {
 
     .content-container h2 {
         font-size: 2.5rem; /* Reduz o tamanho do título em telas menores */
+        text-align: center;
     }
 
     .whatsapp-button {
