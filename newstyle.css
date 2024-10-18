@@ -482,15 +482,6 @@ body.dark-mode .hero {
     color: var(--text-color-dark);
 }
 
-/* Para o botão de alternância de tema */
-#theme-toggle {
-    background-color: transparent;
-    border: 2px solid var(--primary-color-dark);
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 body.light-mode #theme-toggle {
     background-color: var(--primary-color-light);
     color: var(--text-color-light);
@@ -505,6 +496,7 @@ body.dark-mode #theme-toggle {
 .cards-container .card {
     background: var(--bg-color-light);
     color: var(--text-color-light);
+width: 100%;    
 }
 
 body.dark-mode .cards-container .card {
