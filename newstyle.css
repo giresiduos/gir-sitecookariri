@@ -198,7 +198,6 @@
 
 /* Estilo da imagem */
 .image {
-    
     width: 45%;
 }
 
@@ -236,6 +235,16 @@
 #whatzapp:hover{
     scale: 1.1;
 } 
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato{
+        width: 20%;
+    }
+    #whatzapp{
+        width: 80%;
+    }
+}
 
 
 /* COMO TRABALHAMOS */
