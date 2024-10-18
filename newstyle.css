@@ -244,6 +244,9 @@
     #whatzapp{
         width: 80%;
     }
+    #menu{
+        display: none;
+    }
 }
 
 
