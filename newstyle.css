@@ -649,3 +649,32 @@ body {
         font-size: 1.2em; /* Ajusta o tamanho do botão para ficar mais compacto */
     }
 }
+
+/* Estilo para a seção de estatísticas */
+.info-section {
+    padding: 20px;
+}
+
+/* Container dos cartões */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se movam para a próxima linha */
+    justify-content: space-between; /* Espaçamento entre os cartões */
+}
+
+/* Estilo dos cartões */
+.card {
+    flex: 1 1 calc(33.33% - 20px); /* Três cartões em uma linha com espaçamento */
+    margin: 10px; /* Margem ao redor de cada cartão */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Um cartão por linha em telas menores */
+    }
+}
