@@ -375,6 +375,9 @@
         padding: 0;
         margin-bottom: 20px;
     }
+    #reverter{
+        flex-direction: column-reverse; 
+    }
 }
 
 /* FOOTER */
