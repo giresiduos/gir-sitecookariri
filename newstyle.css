@@ -254,7 +254,7 @@ html{
         width: 20%;
     }
     #whatzapp{
-        width: 80%;
+        width: 60%;
     }
     #menu{
         display: none;
@@ -290,10 +290,9 @@ html{
     border-radius: 8px;
     text-align: center;
     margin-bottom: 2rem;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 105vh;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
 }
 
@@ -304,7 +303,7 @@ html{
 
 #como-trabalhamos .card img {
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease; /* Transição suave na imagem */
@@ -324,6 +323,11 @@ html{
     color: rgba(12, 133, 32, 0.76);
     font-size: 20px;
 }
+#como-trabalhamos h1, #como-trabalhamos p{
+    color: white;
+    text-align: center;
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -500,7 +504,7 @@ h2.light-mode {
 
 /* CONTAINER DA IMAGEM */
 .image-container {
-    width: 50%;
+    width: 70%;
     height: 100%; /* Para garantir que seja um quadrado */
     overflow: hidden;
     margin: 0px;
@@ -532,10 +536,11 @@ h2.light-mode {
 .whatsapp-button {
     display: inline-block;
     padding: 15px 25px;
+    margin-top: 20px;
     background-color: #25D366;
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     border-radius: 30px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     animation: pulse 2s infinite ease-in-out;
@@ -593,7 +598,7 @@ h2.light-mode {
     }
 
     .whatsapp-button {
-        font-size: 1.2em; /* Ajusta o tamanho do botão para ficar mais compacto */
+        font-size: 0.8em; /* Ajusta o tamanho do botão para ficar mais compacto */
     }
 }
 
