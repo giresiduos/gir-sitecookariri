@@ -257,7 +257,7 @@
 }
 #como-trabalhamos .card {
     background-color: white;
-    width: 26%;
+    width: 30%;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -287,14 +287,15 @@
     transform: scale(1.05); /* Aumenta levemente a imagem */
 }
 
-#como-trabalhamos .card b {
+#como-trabalhamos .card h3 {
     margin: 1rem 0;
-    font-size: 1.2rem;
+    color: #000;
 }
 
 #como-trabalhamos .card p {
     text-align: justify;
-    color: #333;
+    color: rgba(12, 133, 32, 0.76);
+    font-size: 20px;
 }
 
 /* Responsividade */
@@ -446,26 +447,82 @@ h2.light-mode {
     color: #333;
 }
 
-/* Botão para alternar o tema */
-.theme-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background-color: rgba(0, 0, 0, 0.322);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
+:root {
+    /* Cores para o tema claro */
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --primary-color-light: #28a745;
+    --secondary-color-light: #ff9800;
+    
+    /* Cores para o tema escuro */
+    --bg-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    --primary-color-dark: #28a745;
+    --secondary-color-dark: #ff9800;
 }
 
-@media (max-width: 768px) {
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        width: 90%;
-    }
+body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
 }
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Ajustando os outros elementos */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-light);
+}
+
+body.dark-mode .hero {
+    color: var(--text-color-dark);
+}
+
+/* Para o botão de alternância de tema */
+#theme-toggle {
+    background-color: transparent;
+    border: 2px solid var(--primary-color-dark);
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.light-mode #theme-toggle {
+    background-color: var(--primary-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode #theme-toggle {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Cards de estatísticas */
+.cards-container .card {
+    background: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode .cards-container .card {
+    background: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Para os títulos */
+h1, h2 {
+    color: var(--primary-color-light);
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: var(--primary-color-dark);
+}
+
+/* Adicione outros estilos de componentes conforme necessário */
+
+
+
+
