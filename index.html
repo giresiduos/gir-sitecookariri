@@ -17,12 +17,12 @@
     </div>
     <ul>
         <li><a href="#home">Início</a></li>
-        <li><a href="#who">Quem Somos</a></li>
-        <li><a href="#objectives">Objetivos</a></li>
-        <li><a href="#how">Como Trabalhamos</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#como-trabalhamos">Como Trabalhamos</a></li>
         <li><a href="#contato">Contato</a></li>
     </ul>
-    <button id="theme-toggle">
+    <button button id="theme-toggle">
         <img id="tema" src="./public/lua.png" alt="">
     </button>
 </nav>
@@ -70,23 +70,23 @@
     <h1 class="title">Como Trabalhamos</h1>
     <div class="container">
         <div class="card">
-            <img src="public/logo-light.jpeg" alt="">
-            <b>Coleta de Resíduos</b>
+            <img src="public/img-empresa/imagem6.jpeg" alt="">
+            <h3>Coleta de Resíduos</h3>
             <p>Realizamos coleta seletiva de forma organizada, garantindo separação na origem e contribuindo para a limpeza urbana.</p>
         </div>
         <div class="card">
-            <img src="public/logo-light.jpeg" alt="">
-            <b>Compra e Venda</b>
+            <img src="public/img-empresa/imagem11.jpeg" alt="">
+            <h3>Compra e Venda</h3>
             <p>Compramos recicláveis dos catadores, garantindo renda justa para eles e fortalecendo a economia local.</p>
         </div>
         <div class="card">
-            <img src="public/logo-light.jpeg" alt="">
-            <b>Logística Reversa</b>
+            <img src="public/img-empresa/imagem3.jpeg" alt="">
+            <h3>Logística Reversa</h3>
             <p>Oferecemos soluções para empresas atenderem suas responsabilidades ambientais, fechando o ciclo produtivo.</p>
         </div>
     </div>
 </section>
-
+<div style="height: 80px;"></div>
 <section id="statistics" class="info-section">
     <h2><i class="fas fa-chart-bar"></i> Estatísticas sobre Reciclagem</h2>
     <div class="cards-container">
@@ -149,26 +149,32 @@
     </div>
 </footer>
 
-<!--<script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-    const cards = document.querySelectorAll('.card');
-    const h2 = document.querySelector('h2');
+<script>
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+const nav = document.querySelector('.hero-nav');
+const footer = document.querySelector('.footer');
+const cards = document.querySelectorAll('.card');
+const h2 = document.querySelector('h2');
 
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        h2.classList.toggle('light-mode');
-        cards.forEach(card => {
-            card.classList.toggle('light-mode');
-        });
-        
-        if (body.classList.contains('light-mode')) {
-            themeToggle.textContent = 'Tema Escuro';
-        } else {
-            themeToggle.textContent = 'Tema Claro';
-        }
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    nav.classList.toggle('light-mode');
+    footer.classList.toggle('light-mode');
+    h2.classList.toggle('light-mode');
+
+    cards.forEach(card => {
+        card.classList.toggle('light-mode');
     });
-</script> <-->
+
+    if (body.classList.contains('light-mode')) {
+        themeToggle.textContent = 'Tema Escuro';
+    } else {
+        themeToggle.textContent = 'Tema Claro';
+    }
+});
+
+</script> 
     
 </body>
 </html>
