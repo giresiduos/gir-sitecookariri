@@ -531,6 +531,17 @@ body.dark-mode h1, body.dark-mode h2 {
 
 
 
+/* ESTILO GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 /* ESTILO PARA SEÇÃO DE CONTATO */
 .contact-section {
     background-color: #1e5721ce;
@@ -538,8 +549,10 @@ body.dark-mode h1, body.dark-mode h2 {
     justify-content: space-between;
     align-items: center;
     height: min-content;
+    padding: 20px;
 }
 
+/* CONTAINER DA IMAGEM */
 .image-container {
     width: 50%;
     height: 100%; /* Para garantir que seja um quadrado */
@@ -553,15 +566,8 @@ body.dark-mode h1, body.dark-mode h2 {
     object-fit: cover;
 }
 
-.content-container h2 {
-    font-size: 3.5rem;
-    color: #fdfdfd;
-    text-align: left;
-    padding-bottom: 20px;
-}
-
+/* CONTAINER DO CONTEÚDO */
 .content-container {
-    
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: white;
@@ -569,6 +575,14 @@ body.dark-mode h1, body.dark-mode h2 {
     padding-left: 10%;
 }
 
+.content-container h2 {
+    font-size: 3.5rem;
+    color: #fdfdfd;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/* ESTILO DO BOTÃO */
 .whatsapp-button {
     display: inline-block;
     padding: 15px 25px;
@@ -590,6 +604,7 @@ body.dark-mode h1, body.dark-mode h2 {
     box-shadow: 0px 0px 7px rgba(10, 156, 71, 0.76);
 }
 
+/* ANIMAÇÃO DO BOTÃO */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -599,5 +614,37 @@ body.dark-mode h1, body.dark-mode h2 {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* ESTILO RESPONSIVO */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; /* Altera para coluna em telas menores */
+        align-items: center;
+        text-align: center; /* Centraliza o texto no mobile */
+    }
+
+    .image-container {
+        width: 100%; /* A imagem ocupa toda a largura */
+        height: auto; /* Ajusta a altura da imagem */
+    }
+
+    .image-container img {
+        height: 50vh; /* Diminui a altura da imagem em dispositivos menores */
+    }
+
+    .content-container {
+        width: 100%; /* O conteúdo também ocupa 100% da largura */
+        padding-left: 0; /* Remove o padding à esquerda para centralizar */
+        padding-top: 20px; /* Adiciona espaçamento superior */
+    }
+
+    .content-container h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .whatsapp-button {
+        font-size: 1.2em; /* Ajusta o tamanho do botão para ficar mais compacto */
     }
 }
