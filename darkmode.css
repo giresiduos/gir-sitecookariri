@@ -1,0 +1,96 @@
+
+:root {
+    /* Cores para o tema claro */
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --primary-color-light: #28a745;
+    --secondary-color-light: #ff9800;
+    
+    /* Cores para o tema escuro */
+    --bg-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    --primary-color-dark: #28a745;
+    --secondary-color-dark: #ff9800;
+}
+
+body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: black;
+    color: var(--text-color-dark);
+}
+
+/* Ajustando os outros elementos */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-light);
+}
+
+body.dark-mode .hero {
+    color: var(--text-color-dark);
+}
+
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+
+/* Cards de estatísticas */
+.cards-container .card {
+    background: var(--bg-color-light);
+    color: var(--text-color-light);
+width: 100%;    
+}
+
+body.dark-mode .cards-container .card {
+    background: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Para os títulos */
+h1, h2 {
+    color: var(--primary-color-light);
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: var(--primary-color-dark);
+}
+body.dark-mode #como-trabalhamos{
+    background-color: 139624;
+}
+body.dark-mode #quem-somos p{
+ color: white;
+}
+body.dark-mode #quem-somos .cta{
+    color: #139624;
+}
+body.dark-mode #objetivos p{
+    color: white;
+}
+body.dark-mode #objetivos .cta{
+    color: #139624;
+}
+body.dark-mode #como-trabalhamos .card{
+    background-color: #2e2e2ef5;
+}
+body.dark-mode #como-trabalhamos .card h3{
+    color: #ffffffc2;
+}
+body.dark-mode #como-trabalhamos .card p{
+    color: #ffffffc2;
+}
+
+body.dark-mode #statistics p, body.dark-mode #statistics h3{
+    color: white;
+}

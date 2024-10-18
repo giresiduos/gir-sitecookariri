@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão de Resíduos Sustentáveis</title>
     <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="darkmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="script.js"></script>
 
@@ -22,7 +23,7 @@
         <li><a href="#como-trabalhamos">Como Trabalhamos</a></li>
         <li><a href="#contato">Contato</a></li>
     </ul>
-    <button button id="theme-toggle">
+    <button  id="theme-toggle">
         <img id="tema" src="./public/lua.png" alt="">
     </button>
 </nav>
@@ -150,28 +151,27 @@
 </footer>
 
 <script>
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById('tema');
 const body = document.body;
 const nav = document.querySelector('.hero-nav');
 const footer = document.querySelector('.footer');
 const cards = document.querySelectorAll('.card');
 const h2 = document.querySelector('h2');
 
+
+body.classList.add('light-mode'); // Definição padrão
+
 themeToggle.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    nav.classList.toggle('light-mode');
-    footer.classList.toggle('light-mode');
-    h2.classList.toggle('light-mode');
-
-    cards.forEach(card => {
-        card.classList.toggle('light-mode');
-    });
-
     if (body.classList.contains('light-mode')) {
-        themeToggle.textContent = 'Tema Escuro';
-    } else {
-        themeToggle.textContent = 'Tema Claro';
-    }
+    themeToggle.src = "./public/sol.png";
+    body.classList.remove('light-mode');
+    body.classList.add('dark-mode'); // Alterna para o tema escuro
+} else {
+    themeToggle.src = "./public/lua.png";
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode'); // Alterna para o tema claro
+}
+
 });
 function contato(){
     location="https://api.whatsapp.com/send?1=pt_BR&phone=5588993387593"
